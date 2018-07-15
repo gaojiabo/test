@@ -92,6 +92,7 @@ class Post extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+    
     public function getComments()
     {
         return $this->hasMany(Comment::className(), ['post_id' => 'id']);
